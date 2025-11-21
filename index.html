@@ -1,22 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Página Web</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-      background-color: #f0f0f0;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f3f3f3;
+        }
+
+        header {
+            background: #4a76fd;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #2247b3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .card {
+            background: #e9edff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #4a76fd;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        button {
+            background: #4a76fd;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3b5fcc;
+        }
+    </style>
 </head>
 <body>
-  <h1>¡Hola mundo!</h1>
-  <p>Esta es mi primera página web publicada con GitHub Pages.</p>
+
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <h2>Contenido Principal</h2>
+        <p>Esta es una página web simple hecha en HTML y CSS. Puedes modificarla para aprender cómo funcionan las etiquetas y el estilo.</p>
+
+        <div class="card">
+            <h3>Tarjeta de ejemplo</h3>
+            <p>Este es un recuadro destacado dentro de la página. Puedes usarlo para mostrar información importante.</p>
+            <button onclick="alert('¡Gracias por hacer clic!')">Haz clic aquí</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Mi sitio web</p>
+    </footer>
+
 </body>
 </html>
